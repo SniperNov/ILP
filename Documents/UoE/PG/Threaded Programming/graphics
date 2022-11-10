@@ -1,0 +1,15 @@
+# %matplotlib inline
+import numpy as np 
+import pandas as pd 
+import matplotliib as plt
+import seaborn as sns
+
+loop1_static = [3.182377,	3.148847,	3.067114,	3.072720,	3.168922,	3.120465,	3.177313]
+loop1_dynamic = [3.164418,	3.089745,	3.069434,	3.038104,	3.064679,	3.080757,	3.223434]
+loop1_guided = [3.153007,	2.928950,	2.980459,	2.982840,	2.999923,	3.060678,	3.182602]
+loop1_static_ns = [5.378422]
+loop1_auto = [3.100056]
+sns.set(style='whitegrid')
+sns.violinplot(data=[loop1_static, loop1_dynamic, loop1_guided])
+sns.show()
+sns
